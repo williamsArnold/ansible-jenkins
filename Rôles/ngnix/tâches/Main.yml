@@ -4,7 +4,7 @@
    - ngnix
    state: present
    uodate_cache: 
-    cache_valid_time: 3000
+    cache_valid_time: 3600
   become: yes
 - name: start ngninx
   service:
