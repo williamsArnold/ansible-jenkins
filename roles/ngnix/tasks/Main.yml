@@ -1,0 +1,18 @@
+- name: install ngnix
+ apt:
+   name:
+   - ngnix
+   state: present
+   uodate_cache: 
+    cache_valid_time: 3000
+  become: yes
+- name: start ngninx
+  service:
+    name: ngnix
+    state: started
+  become:
+
+-name: index
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
