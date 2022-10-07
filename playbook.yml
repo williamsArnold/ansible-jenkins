@@ -1,5 +1,5 @@
 -name: install nginx
- - hosts: all
+ - hosts: 192.168.184.128
    become: yes
  - roles: 
    - ngnix
