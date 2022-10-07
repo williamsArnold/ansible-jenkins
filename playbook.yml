@@ -1,5 +1,5 @@
 -name: install nginx
- - hosts: all
+ hosts: all
    become: yes
- - roles: 
-   - ngnix
+ roles: 
+  - ngnix
