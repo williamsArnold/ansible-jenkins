@@ -1,4 +1,4 @@
--name: install nginx
+- name: install nginx
  - hosts: all
  - roles: 
    - ngnix
