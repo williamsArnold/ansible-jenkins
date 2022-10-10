@@ -1,16 +1,16 @@
-- name: install ngnix
+- name: install nginx
  apt:
    name:
-   - ngnix
+   - nginx
    state: present
-   uodate_cache: 
-    cache_valid_time: 3000
+   update_cache: 
+    cache_valid_time: 3600
   become: yes
-- name: start ngninx
+- name: start nginx
   service:
-    name: ngnix
+    name: nginx
     state: started
-  become:
+  become: yes
 
 -name: index
   template:
